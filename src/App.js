@@ -4,10 +4,10 @@ import { Home } from "./Pages/Home";
 import { Projects } from "./Pages/Projects";
 function App() {
   return (
-    <div className="App">
+    <div style={{background:" rgb(15, 15, 30)"}} className="App">
       <Routes>
         <Route index element={<Home/>} />
-        <Route path="/projects" index={<Projects/>}/>
+        <Route path="/projects" element={<Projects/>}/>
       </Routes>
     </div>
   );
