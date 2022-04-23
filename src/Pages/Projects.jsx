@@ -1,25 +1,20 @@
 import React from 'react'
 import { HeaderBrend } from '../Components/HeaderBrend'
+import img from '../img/img-1.png'
+import img1 from "../img/img.png"
 
 export const Projects = () => {
   return (
     <div className="Projects">
-      <div className="navbar-brand">
-        <HeaderBrend />
-      </div>
-      <div className="header">
-        <h1 style={{ padding: "130px 515px 20px 200px",
-          fontWeight: "500",
-          fontSize: "42px"}}>
-        Projects 💡
-        </h1>
-        <p  style={{ padding: "5px 515px 29px 200px"}}>Some things i’ve been working on in the past few years:</p>
-      </div>
-      <div className="header-content" style={{padding: "65px 150px 55px 200px"}}>
-        <div className="content-text">
-        <h2>Remotely</h2>
-        <p>Remotely is a remote friendly-company — with our headquarters in San Francisco, a second office in LA, and a strong commitment to ensuring people can do great work here and thrive without having to live near an office. This role is open to candidates across the U.S.</p>
-        <button className='btn' style={{
+      <HeaderBrend/>
+    <div className='min-h-screen p-44'>
+      <h1 className='text-5xl text-white '>Projects 💡</h1>
+      <p  className=' mt-10 mb-16'>Some things i’ve been working on in the past few years:</p>
+      <div className='flex mb-32'>
+        <div className="w-2/5 mr-32">
+          <h2 className='font-bold text-white text-4xl'>Remotely</h2>
+          <p className="mt-10 mb-16">Remotely is a remote friendly-company — with our headquarters in San Francisco, a second office in LA, and a strong commitment to ensuring people can do great work here and thrive without having to live near an office. This role is open to candidates across the U.S.</p>
+          <button className='btn hover:scale-125' style={{
           justifyContent: "center",
           alignItems: "center",
           padding: "13px 58px",
@@ -27,30 +22,27 @@ export const Projects = () => {
           borderRadius: "8px",
           boxShadow: "5px -10px #1F2937",
           border: "2px solid #188AEC",
-        }}>View project</button>
+        }}>Say Hello</button>
         </div>
-        <div className="img">
-          <img src='../img/img.png' alt="" />
-        </div>
+        <img src={img1} alt="" />
       </div>
-      <div className="footer">
-        <div className="img">
-          <img src="../img/img-1" alt="" />
-        </div>
-        <div className="text-1">
-          <h2>Brutal Design Library</h2>
-          <p>Brutal is a remote friendly-company — with our headquarters in San Francisco, a second office in LA, and a strong commitment to ensuring people can do great work here and thrive without having to live near an office. This role is open to candidates across the U.S.</p>
-          <button className='btn' style={{
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "13px 58px",
-          background: "#188AEC",
-          borderRadius: "8px",
-          boxShadow: "5px -10px #1F2937",
+      <div className="flex">
+        <img className='mr-32' src={img} alt="" />
+        <div className="w-2/5 mr-32">
+          <h2 className='font-bold text-white text-4xl'>Brutal Design Library</h2>
+          <p className="mt-10 mb-16">Brutal is a remote friendly-company — with our headquarters in San Francisco, a second office in LA, and a strong commitment to ensuring people can do great work here and thrive without having to live near an office. This role is open to candidates across the U.S.</p>
+          <button className='btn hover:scale-125' style={{
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "13px 58px",
+            background: "#188AEC",
+            borderRadius: "8px",
+            boxShadow: "5px -10px #1F2937",
           border: "2px solid #188AEC",
-        }}>View project</button>
+        }}>Say Hello</button>
         </div>
       </div>
     </div>
+  </div>
   )
 }

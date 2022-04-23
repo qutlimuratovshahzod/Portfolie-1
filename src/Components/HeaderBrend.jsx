@@ -3,7 +3,7 @@ import React from 'react'
 export const HeaderBrend = () => {
     return (
         <div >
-             <a style={{fontWeight:" 400",
+             <a className='brandname ' style={{fontWeight:" 400",
             fontSize: "56px",
             lineHeight: "87px",
             textAlign: "center",
@@ -13,7 +13,7 @@ export const HeaderBrend = () => {
             height: "87px",
             left: "78px",
             top: "26px",
-            }} href="/">Ololade. </a>
+            }} href="/">Ololade<span className='text-red-500'>.</span> </a>
          </div>
     )
 }

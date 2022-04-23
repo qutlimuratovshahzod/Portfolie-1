@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.brandname{
+    font-family: 'Yellowtail', cursive;
+}
